@@ -1,15 +1,18 @@
 /* importing assets */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 @import url(../styles/reset.css);
 @import url(../styles/variables.css);
 @import url(../styles/fonts.css);
 
 
 /* for mobile */
-
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
 main{
-    min-height: 100vh;
+    min-height: 100vh;      
     display: grid;
     place-content: start center;
 }
@@ -20,7 +23,6 @@ section{
     background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
     text-align: center;
     display: grid;
-    place-content: center;
     place-items: center;
     gap: 1rem;
     color: white;
@@ -128,9 +130,7 @@ button:hover{
     background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
 }
 @media (min-width:800px){
-    body{
-        background-color: var(--Pale-blue);
-    }
+
     main{
         place-content: center;
     }
@@ -138,8 +138,10 @@ button:hover{
         display: flex;
         border-radius: 30px;
         overflow: hidden;
+        box-shadow: 0px 10px 30px rgba(8, 1, 80, 0.24);
     }
     .result{
+        border-radius: 30px;
         flex: 1;
     }
     .summary{
